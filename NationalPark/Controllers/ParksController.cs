@@ -40,6 +40,7 @@ namespace NationalPark.Controllers
       {
         query = query.Where(entry => entry.Image == image);
       }
+      return query.ToList();
     }
     // POST api/parks
     [HttpPost]
