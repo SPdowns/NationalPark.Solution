@@ -17,9 +17,29 @@ namespace NationalPark.Controllers
     }
     // GET api/parks
     [HttpGet]
-    public ActionResult<IEnumerable<Park>> Get()
+    public ActionResult<IEnumerable<Park>> Get(string name, string location, string description, string dateestablished, string image)
     {
-      return _db.Parks.ToList();
+      var query = _db.Parks.AsQueryable();
+      if (name != null)
+      {
+        query = query.Where(entry => entry.Name == name);
+      }
+      if (location != null)
+      {
+        query = query.Where(entry => entry.Location == location);
+      }
+      if (description != null)
+      {
+        query = query.Where(entry => entry.Description == description);
+      }
+      if (dateestablished != null)
+      {
+        query = query.Where(entry => entry.DateEstablished == dateestablished);
+      }
+      if (image != null)
+      {
+        query = query.Where(entry => entry.Image == image);
+      }
     }
     // POST api/parks
     [HttpPost]
