@@ -110,7 +110,7 @@ _**Database Mgmt:** [MySql Workbench](https://www.mysql.com/products/workbench/)
 
 ## **KNOWN BUGS**
 
-_** Trying to implement swagger. Built and API on thier hub site, read through https://app.swaggerhub.com/help/tutorials/writing-swagger-definitions#creating-an-api and am moving on to https://app.swaggerhub.com/help/domains/creating-domain and seeing if I can get documentation going **_
+_** Trying to implement swagger. Built and API on thier hub site "https://app.swaggerhub.com/apis/SPdowns/NationalParks/0.1a", read through https://app.swaggerhub.com/help/tutorials/writing-swagger-definitions#creating-an-api and am moving on to https://app.swaggerhub.com/help/domains/creating-domain and seeing if I can get documentation going **_
 
 <br>
 
