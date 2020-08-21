@@ -54,6 +54,17 @@ namespace NationalPark.Controllers
     {
         return _db.Parks.FirstOrDefault(entry => entry.ParkId == id);
     }
+    // Pagination
+    [HttpGet("page")]
+    public ActionResult GetPage([FromQuery] UrlQuery urlQuery)
+    {
+      var validUrlQuery = new UrlQuery(urlQuery.PageNumber, urlQuery.PageSize);
+      var pagedData = _db.Parks
+        .OrderBy(park => park.ParkId)
+        .Skip((validUrlQuery.PageNumber - 1) * validUrlQuery.PageSize)
+        .Take(validUrlQuery.PageSize);
+      return Ok(pagedData);
+    }
     // PUT api/parks/5
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] Park park)
