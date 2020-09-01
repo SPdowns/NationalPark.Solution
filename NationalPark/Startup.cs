@@ -23,6 +23,7 @@ namespace NationalPark
             services.AddDbContext<NationalParkContext>(opt =>
                 opt.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSwaggerDocument();
         }
 
 
@@ -38,6 +39,8 @@ namespace NationalPark
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+                app.UseOpenApi();
+                app.UseSwaggerUi3();
 
             // app.UseHttpsRedirection();
             app.UseMvc();

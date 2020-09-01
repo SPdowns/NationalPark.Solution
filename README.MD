@@ -28,38 +28,6 @@ An API Containing a structure for containing National Parks in the US.
 
 <br>
 
-<!-- #### **Step 1: From within VSCode in the root project directory, we will create a .gitignore file**
-
-# For ![l-top](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/mac-pass-sm.png)
-```js 
-touch .gitignore 
-```
-
-# For ![l-top](https://github.com/ryanoasis/nerd-fonts/wiki/screenshots/v1.0.x/windows-pass-sm.png)
-
-```js 
-ni .gitignore 
-```
-
-#### Step 2: commit that .gitignore file (this prevents your sensitive information from being shown to others). **⚠️DO NOT PROCEED UNTIL YOU DO!⚠️**
-
-![setup](https://coding-assets.s3-us-west-2.amazonaws.com/img/entity-readme-image.png "Set up instructions")
-
-#### Step 3: **To commit your .gitignore file enter the following commands**
-
-```js
-git add .gitignore
-```
-```js
-git commit -m "protect data"
-```
-
-#### Step 4: **Then, you need to update your username and password in the appsettings.json file.**
-
-_by default these are set to user:root and an empty password. if you are unsure, refer to the settings for your MySqlWorkbench._
-
-![appsettings](https://coding-assets.s3-us-west-2.amazonaws.com/img/app-settings.png) -->
-
 ## **SETUP**
 
 copy this url to clone this project to your local system:
@@ -98,6 +66,13 @@ dotnet watch run
 ``` 
 
 <br>
+
+# Swagger Documentation
+
+This API is documentated at: 
+
+https://app.swaggerhub.com/apis-docs/SPdowns/NationalPark/1.0.0
+
 
 ## **TECHNOLOGIES USED**
 
